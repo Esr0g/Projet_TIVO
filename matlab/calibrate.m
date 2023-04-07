@@ -12,7 +12,7 @@ if fsqr < 0
     disp('Calibration incorrecte');
     f = -1;
 else
-    f = sqrt(fsqr)
+    f = sqrt(fsqr);
 end
 K = [f 0 center(1); 0 f center(2); 0 0 1];
 %% Calcul de l'homographie carré z=0 -> caméra
